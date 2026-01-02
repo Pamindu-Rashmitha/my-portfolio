@@ -1,12 +1,19 @@
 import { useState } from 'react';
-import { Sun } from 'lucide-react'; 
+import { Sun } from 'lucide-react';
 
 const Navbar = () => {
   const [activeTab, setActiveTab] = useState('Home');
 
+
   const navLinks = [
-    'Home', 'About', 'Skills', 'Projects', 
-    'Experience', 'Education', 'Certifications', 'Contact'
+    { name: 'Home', id: 'home' },
+    { name: 'About', id: 'about' },
+    { name: 'Skills', id: 'skills' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Experience', id: 'experience' },
+    { name: 'Education', id: 'education' },
+    { name: 'Certifications', id: 'certifications' },
+    { name: 'Contact', id: 'contact' }
   ];
 
   return (
@@ -14,17 +21,18 @@ const Navbar = () => {
       <div className="bg-blue-600/20 backdrop-blur-xl border border-white/10 p-1.5 rounded-full flex items-center shadow-2xl">
         <div className="flex items-center gap-1">
           {navLinks.map((link) => (
-            <button
-              key={link}
-              onClick={() => setActiveTab(link)}
+            <a
+              key={link.id}
+              href={`#${link.id}`}
+              onClick={() => setActiveTab(link.name)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeTab === link 
+                activeTab === link.name 
                   ? 'bg-white text-blue-900 shadow-lg' 
                   : 'text-white/80 hover:text-white hover:bg-white/10'
               }`}
             >
-              {link}
-            </button>
+              {link.name}
+            </a>
           ))}
         </div>
 

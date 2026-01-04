@@ -73,26 +73,40 @@ const App = () => {
                       ))}
                     </div>
                     
-
-                    <a
-                      href={project.githubLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition"
-                    >
-                      View GitHub
-                    </a>
-
-                    {project.liveDemo && (
+                    <div className="flex gap-4 mt-6">
+                      
                       <a
-                        href={project.liveDemo}
+                        href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block w-1/2 text-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition"
+                        className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 bg-slate-800/50 hover:bg-slate-700 border border-slate-700 hover:border-slate-500 text-slate-200 rounded-xl transition-all duration-300 group"
                       >
-                        Live Demo
+                        <span className="text-sm font-semibold">Source Code</span>
                       </a>
-                    )}
+
+                      
+                      {project.liveDemo && (
+                        <a
+                          href={project.liveDemo}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="relative flex-1 group overflow-hidden rounded-xl p-[1px] focus:outline-none"
+                        >
+                          
+                          <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#3b82f6_0%,#10b981_50%,#3b82f6_100%)]" />
+                          
+                          <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-xl bg-slate-950 px-4 py-2 text-sm font-bold text-white backdrop-blur-3xl transition-all group-hover:bg-slate-950/50">
+                            <span className="relative flex items-center gap-2">
+                              <span className="relative flex h-2 w-2">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                              </span>
+                              Live Demo
+                            </span>
+                          </span>
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </motion.div>
               ))}

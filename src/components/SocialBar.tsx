@@ -4,7 +4,7 @@ const SocialBar = () => {
     {/* Right Sidebar Socials */}
     return(
         <>
-            <div className="fixed right-5 top-3/4 -translate-y-1/2 flex flex-col items-center gap-6 z-40">
+            <div className="fixed right-0.5 top-3/4 -translate-y-1/2 flex flex-col items-center gap-6 z-40">
                 <div className="h-20 w-\[1px\] bg-slate-700 mb-2"></div>
                 <p className="text-[10px] tracking-[0.2em] text-slate-500 uppercase rotate-90 mb-8 whitespace-nowrap">
                     Get in touch

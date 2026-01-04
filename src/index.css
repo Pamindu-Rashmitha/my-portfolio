@@ -2,8 +2,21 @@
 
 html {
   scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 section {
   scroll-margin-top: 80px;
+}
+
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand: #3b82f6;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }

@@ -14,7 +14,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div className="bg-slate-900 text-white min-h-screen">
+    <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white min-h-screen transition-colors duration-300">
       <Navbar/>
       <SocialBar/>
       

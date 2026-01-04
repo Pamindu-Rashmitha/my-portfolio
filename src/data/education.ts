@@ -10,5 +10,11 @@ export const education = [
     school: "Mahinda Rajapakse College, Homagama",
     duration: "2021 - 2023",
     description: "Completed A-Levels with a focus on Com.Mathematics, Physics and IT"
+  },
+  {
+    degree: "Ordinary Level",
+    school: "St. Joseph's College, Nugegoda",
+    duration: "2017 - 2019",
+    description: "Completed O-Levels with a focus on IT, Commerce and English Lit"
   }
 ]

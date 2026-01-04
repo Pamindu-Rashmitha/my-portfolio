@@ -24,9 +24,10 @@ const Hero = () => {
                 </h3>
                 
                 <p className="text-slate-400 text-lg max-w-xl leading-relaxed mb-10">
-                    I’m a software engineer specializing in building exceptional digital experiences. 
-                    Currently, I’m focused on building accessible, human-centered products with 
-                    <span className="text-blue-400"> React & TypeScript</span>.
+                    Driven by the intersection of logic and creativity, I specialize in crafting robust,
+                    intelligent systems using modern tech stacks. I thrive on deconstructing complex challenges
+                    into streamlined, high-performance software through persistent learning and hands-on experimentation
+                    with new-age development tools.
                 </p>
 
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -37,10 +38,14 @@ const Hero = () => {
                         View Projects
                         </a>
                     </button>
+
+                    <a
+                        href="/Resume.pdf" 
+                        download="Pamindu_Rashmitha_CV.pdf"
+                    >
                     
-                    {/* Pulsing Resume Button */}
-                    <motion.button 
-                        animate={{ 
+                    <motion.button
+                        animate={{
                             boxShadow: ["0px 0px 0px rgba(59, 130, 246, 0)", "0px 0px 20px rgba(59, 130, 246, 0.4)", "0px 0px 0px rgba(59, 130, 246, 0)"] 
                         }}
                         transition={{ duration: 2, repeat: Infinity }}
@@ -48,6 +53,7 @@ const Hero = () => {
                     >
                         Download CV
                     </motion.button>
+                    </a>
                 </div>
             </motion.div>
 

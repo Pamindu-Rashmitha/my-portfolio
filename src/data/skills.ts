@@ -6,5 +6,5 @@ export const skills = [
   { name: "Mobile", icon: Smartphone, items: ["React Native", "Expo"]},
   { name: "Languages", icon: Terminal, items: ["JavaScript", "Python", "Java"]},
   { name: "Databases", icon: Database, items: ["MySQL","Postgresql"]},
-  { name: "AI/ML", icon: Brain, items:["Supervised Learning","Unsupervised Learning","Deep Learning"]}
+  { name: "AI/ML", icon: Brain, items:["Pandas","PyTorch","TensorFlow","LangChain","Numpy","Sci-kit Learn","Matplotlib","Seaborn"]}
 ]

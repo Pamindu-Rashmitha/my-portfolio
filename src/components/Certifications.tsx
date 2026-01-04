@@ -1,29 +1,8 @@
 import { motion } from 'framer-motion';
-import type { Variants } from 'framer-motion';
 import { Award, ExternalLink } from "lucide-react";
 import { certifications } from "../data/Certifications";
 
 const Certifications = () => {
-    
-    const containerVariants: Variants = { 
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.15,
-            },
-        },
-    };
-
-    const itemVariants: Variants = {
-        hidden: { opacity: 0, y: 20 },
-        visible: { 
-            opacity: 1, 
-            y: 0,
-            transition: { duration: 0.5, ease: "easeOut" } 
-        },
-    };
-
     return (
         <section id="certifications" className="max-w-6xl mx-auto py-24 px-6">
             <motion.h2 
@@ -35,20 +14,18 @@ const Certifications = () => {
                 Certifications
             </motion.h2>
 
-            <motion.div 
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="grid grid-cols-1 md:grid-cols-2 gap-4"
-            >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {certifications.map((cert, index) => (
                     <motion.a
                         key={index}
                         href={cert.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        variants={itemVariants} //
+                        
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
                         whileHover={{ scale: 1.02 }}
                         className="group flex items-center justify-between p-6 bg-slate-800/30 border border-slate-700 rounded-xl hover:bg-slate-800/50 transition-all hover:border-blue-500/50 shadow-lg"
                     >
@@ -68,7 +45,7 @@ const Certifications = () => {
                         <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors shrink-0 ml-4" />
                     </motion.a>
                 ))}
-            </motion.div>
+            </div>
         </section>
     );
 };

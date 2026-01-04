@@ -27,9 +27,9 @@ const Certifications = () => {
             
             <motion.h2 
                 initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 1, y: 0 }} // Changed x to y for vertical entry
                 viewport={{ once: true }}
-                className="text-3xl font-bold text-white mb-12"
+                className="text-5xl font-extrabold text-center bg-linear-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-16"
             >
                 Certifications
             </motion.h2>

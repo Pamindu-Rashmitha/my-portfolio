@@ -5,8 +5,10 @@ const Experience = () =>{
     return(
         <section id="experience" className="max-w-6xl mx-auto py-20 px-6">
             
-            <h2 className="text-5xl font-extrabold bg-linear-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent text-center">Work Experience</h2>
-            <br /><br /><br />
+            <h2 className="text-5xl font-extrabold bg-linear-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent text-center mb-16">
+                Work Experience
+            </h2>
+            
             
             <div className="space-y-12">
                 {experiences.map((exp, index) => (

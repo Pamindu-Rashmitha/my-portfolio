@@ -5,7 +5,7 @@ const Timeline = () => {
     return (
         <section id="education" className="max-w-6xl mx-auto py-24 px-6">
             {/* Header matches your Experience section size and alignment */}
-            <h2 className="text-3xl font-bold text-white mb-16">
+            <h2 className="text-5xl font-extrabold text-center bg-linear-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-16">
                 Education
             </h2>
             

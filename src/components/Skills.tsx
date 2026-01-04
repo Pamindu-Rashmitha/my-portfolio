@@ -24,11 +24,12 @@ const Skills = () => {
 
     return (
         <section id="skills" className="max-w-6xl mx-auto py-24 px-6">
+            
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="text-3xl font-bold text-white mb-16"
+                className="text-5xl font-extrabold text-center bg-linear-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-16"
             >
                 Technical Skills
             </motion.h2>

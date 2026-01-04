@@ -31,7 +31,11 @@ const Hero = () => {
 
                 <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                     <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all transform hover:-translate-y-1 shadow-lg shadow-blue-500/20">
+                       <a href="#projects"
+                        className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all transform hover:-translate-y-1 shadow-lg shadow-blue-500/20"
+                        >
                         View Projects
+                        </a>
                     </button>
                     
                     {/* Pulsing Resume Button */}

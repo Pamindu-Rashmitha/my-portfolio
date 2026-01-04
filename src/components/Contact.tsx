@@ -6,7 +6,9 @@ const Contact = () => {
   return (
     <section id="contact" className="max-w-6xl mx-auto py-24 px-6 border-t border-slate-800">
       <div className="text-center mb-16">
-        <h3 className="text-5xl font-bold text-white mb-6">Get In Touch</h3>
+        <h3 className="text-5xl font-extrabold bg-linear-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-6">
+        Get In Touch
+        </h3>
         <p className="text-slate-400 max-w-lg mx-auto leading-relaxed">
           I'm currently looking for new opportunities and my inbox is always open. 
           Whether you have a question or just want to say hi, I'll try my best to get back to you!
@@ -39,7 +41,7 @@ const Contact = () => {
       
       <div className="mt-16 text-center">
         <a 
-          href="mailto:pamindu@example.com"
+          href="mailto:pamidurashmitha@gmail.com"
           className="inline-flex items-center gap-2 px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full transition-all shadow-lg shadow-blue-500/20 hover:-translate-y-1"
         >
           <Send size={20} />

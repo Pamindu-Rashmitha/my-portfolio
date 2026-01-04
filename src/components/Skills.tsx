@@ -1,8 +1,10 @@
-import { motion } from 'framer-motion';
+import { motion  } from 'framer-motion';
+import type {Variants} from 'framer-motion';
 import { skills } from "../data/skills";
 
 const Skills = () => {
-    const containerVariants = {
+
+    const containerVariants: Variants = { 
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
@@ -12,19 +14,18 @@ const Skills = () => {
         },
     };
 
-    // Animation Variants for individual Cards
-    const itemVariants = {
+
+    const itemVariants: Variants = { 
         hidden: { opacity: 0, y: 20 },
         visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.5, ease: "easeOut" }
+            transition: { duration: 0.5, ease: "easeOut" } 
         },
     };
 
     return (
         <section id="skills" className="max-w-6xl mx-auto py-24 px-6">
-            
             <motion.h2
                 initial={{ opacity: 0, y: -20 }}
                 whileInView={{ opacity: 1, y: 0 }}

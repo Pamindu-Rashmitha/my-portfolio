@@ -89,9 +89,9 @@ const App = () => {
           </main>
         </section>
 
-         <Experience/>
-         <Timeline/>
-         <Certifications/>
+        <Experience/>
+        <Timeline/>
+        <Certifications/>
 
         {/* Contact Section */}
         <Contact />

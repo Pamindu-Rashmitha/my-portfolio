@@ -82,6 +82,17 @@ const App = () => {
                     >
                       View GitHub
                     </a>
+
+                    {project.liveDemo && (
+                      <a
+                        href={project.liveDemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block w-1/2 text-center bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-lg transition"
+                      >
+                        Live Demo
+                      </a>
+                    )}
                   </div>
                 </motion.div>
               ))}

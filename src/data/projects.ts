@@ -35,7 +35,7 @@ export const projects: Project[] = [
         id: 3,
         title: "Heart-Disease Predictor",
         description: "A machine learning web application that predicts the likelihood of a patient having heart disease based on medical attributes.",
-        technologies: ["Python", "Scikit-Learn", "Streamlit"],
+        technologies: ["Python", "Scikit-Learn", "Streamlit","Pandas","Matplotlib","Seaborn","Logistic Regression","Decision Tree","Random Forest","XG-boost"],
         githubLink: "https://github.com/Pamindu-Rashmitha/Heart-Disease-Predictor",
         liveDemo:"https://heart-disease-predictor-h7gwgu4xvqe5byvijs5eh9.streamlit.app/",
         image: heartImg
@@ -45,7 +45,7 @@ export const projects: Project[] = [
         title: "Pamiya-GPT",
         description: "Pamiya-GPT is a sophisticated AI assistant capable of real-time web search, data analysis, document reading, and email automation. Built using Google's Gemini 2.5 Flash, LangChain, and Streamlit\
                         Unlike standard chatbots that rely solely on training data, Pamiya-GPT is an Agent equipped with specialized tools. It intelligently decides when to browse the internet, analyze a spreadsheet, or read a PDF document to answer your questions.",
-        technologies: ["Python", "Scikit-Learn", "Streamlit"],
+        technologies: ["Python", "Scikit-Learn", "Streamlit","Lang-Chain","Pandas","pypdf","duckduckgo search"],
         githubLink: "https://github.com/Pamindu-Rashmitha/Pamiya-GPT",
         liveDemo:"https://pamiya-gpt-fzv4byvuzavwvv8na975u8.streamlit.app/",
         image: pamiya

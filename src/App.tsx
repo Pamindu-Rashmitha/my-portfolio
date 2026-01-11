@@ -11,6 +11,7 @@ import SocialBar from './components/SocialBar';
 import { motion } from 'framer-motion';
 import BackToTop from './components/BackToTop';
 import Footer from './components/Footer';
+import Achievements from './components/Achievements';
 
 const App = () => {
   return (
@@ -117,6 +118,7 @@ const App = () => {
         <Experience/>
         <Timeline/>
         <Certifications/>
+        <Achievements/>
 
         {/* Contact Section */}
         <Contact />

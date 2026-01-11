@@ -22,6 +22,7 @@ const Navbar = () => {
     { name: 'Experience', id: 'experience' },
     { name: 'Education', id: 'education' },
     { name: 'Certifications', id: 'certifications' },
+    { name: 'Achievements', id: 'Achievements' },
     { name: 'Contact', id: 'contact' }
   ];
 
@@ -59,7 +60,7 @@ const Navbar = () => {
 
         
         <div className="ml-2 pl-2 border-l border-white/20">
-          <button 
+          <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             className="p-2 text-white/80 hover:text-white hover:bg-white/10 rounded-full transition-colors"
           >

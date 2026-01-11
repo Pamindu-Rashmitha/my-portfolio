@@ -33,28 +33,33 @@ src/
 └── index.css        # Tailwind v4 configuration and global styles
 ```
 ## ⚙️ Installation & Setup
-```text
+
 Clone the repository
+```
 
 Bash
 
 git clone [https://github.com/Pamindu-Rashmitha/my-portfolio.git](https://github.com/Pamindu-Rashmitha/my-portfolio.git)
 cd my-portfolio
+```
 Install dependencies
 ```
-```
+
 Bash
 
 npm install
-Run the development server
 ```
+
+Run the development server
+
 ```
 Bash
 
 npm run dev
+```
 Build for production
 ```
-```
+
 Bash
 
 npm run build

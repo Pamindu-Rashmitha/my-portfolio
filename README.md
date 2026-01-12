@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# Pamindu Rashmitha | AI Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, interactive developer portfolio built with a focus on Artificial Intelligence and modern web technologies. This project showcases my journey as an AI student at SLIIT and my expertise in building intelligent, human-centered digital products.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## 🚀 Overview
+This portfolio is designed to be fast, responsive, and visually striking. It uses a "Dark Mode First" approach with glassmorphism elements, smooth Framer Motion animations, and a focus on technical data visualization.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Live Demo:** [pamindu-rashmitha.vercel.app](url)
+- **Specialization:** Artificial Intelligence & Machine Learning
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **Frontend:** React 19, TypeScript, Tailwind CSS v4
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Development:** Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Key Features
+- **Intelligent Design:** Clean, modern UI with a focus on AI-related projects.
+- **Dynamic Projects Section:** Automated rendering of projects with specialized "Live Demo" status indicators.
+- **Interactive Timeline:** A custom-built, responsive education and work experience timeline.
+- **Theme Control:** Native Dark/Light mode support with CSS-first configuration.
+- **Fully Responsive:** Optimized for everything from ultra-wide monitors to mobile devices.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Project Structure
+```text
+src/
+├── assets/          # Project images and personal photos
+├── components/      # Reusable UI components (Navbar, Hero, etc.)
+├── data/            # Centralized data files for easy updates
+├── App.tsx          # Main application layout
+└── index.css        # Tailwind v4 configuration and global styles
+```
+## ⚙️ Installation & Setup
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Bash
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+git clone [https://github.com/Pamindu-Rashmitha/my-portfolio.git](https://github.com/Pamindu-Rashmitha/my-portfolio.git)
+cd my-portfolio
+```
+Install dependencies
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Bash
+
+npm install
+```
+
+Run the development server
+
+```
+Bash
+
+npm run dev
+```
+Build for production
+```
+
+Bash
+
+npm run build
 ```

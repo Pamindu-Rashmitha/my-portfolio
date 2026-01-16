@@ -15,15 +15,15 @@ const About = () => {
                     viewport={{ once: true }}
                     >
                     
-                    <h3 className="text-4xl font-bold text-white mb-6">
+                    <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">
                         Building the future with <span className="text-blue-500">Artificial Intelligence</span>
                     </h3>
-                    <p className="text-slate-400 text-lg leading-relaxed mb-6">
+                    <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed mb-6">
                         {aboutData.description}
                     </p>
                     <div className="flex items-center gap-3 text-slate-300 bg-slate-800/50 p-4 rounded-xl border border-slate-700 w-fit">
-                        <GraduationCap className="text-blue-400 w-6 h-6" />
-                        <span className="font-medium text-sm">SLIIT • Year 2, Semester 2</span>
+                        <GraduationCap className="text-blue-800 dark:text-blue-400 w-6 h-6" />
+                        <span className="font-medium text-sm text-slate-900 dark:text-white">SLIIT • Year 2, Semester 2</span>
                     </div>
                     </motion.div>
 
@@ -42,7 +42,7 @@ const About = () => {
                         {index === 1 && <Code className="text-blue-400 w-6 h-6 mb-3" />}
                         {index === 2 && <Cpu className="text-purple-400 w-6 h-6 mb-3" />}
                         {index === 3 && <BrainCircuit className="text-orange-400 w-6 h-6 mb-3" />}
-                        <p className="text-sm text-slate-300 leading-snug">{item}</p>
+                        <p className="font-medium text-sm text-slate-900 dark:text-white">{item}</p>
                         </motion.div>
                     ))}
                     </div>

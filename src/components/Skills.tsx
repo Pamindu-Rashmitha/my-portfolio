@@ -30,17 +30,17 @@ const Skills = () => {
                         className="p-6 bg-slate-800/30 border border-slate-700 rounded-2xl hover:border-blue-500/50 transition-colors shadow-lg group"
                     >
                         <div className="flex items-center gap-4 mb-4">
-                            <div className="p-2 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors">
-                                <skill.icon className="w-6 h-6 text-blue-400" />
+                            <div className="p-2 bg-blue-500/50 dark:bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors">
+                                <skill.icon className="w-6 h-6 text-blue-800 dark:text-blue-400" />
                             </div>
-                            <h3 className="text-lg font-bold text-white">{skill.name}</h3>
+                            <h3 className="font-medium text-sm text-slate-900 dark:text-white">{skill.name}</h3>
                         </div>
                         
                         <div className="flex flex-wrap gap-2">
                             {skill.items.map(item => (
                                 <span 
                                     key={item} 
-                                    className="text-xs font-medium text-slate-400 bg-slate-900/50 border border-slate-700/50 px-3 py-1 rounded-md"
+                                    className="font-medium text-xs text-slate-900 dark:text-white bg-slate-900/50 border border-slate-700/50 px-3 py-1 rounded-md"
                                 >
                                     {item}
                                 </span>

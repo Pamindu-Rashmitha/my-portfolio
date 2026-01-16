@@ -15,15 +15,17 @@ const Hero = () => {
                 <h2 className="text-blue-400 font-mono mb-4 text-lg">Hi, my name is</h2>
                 
                 {/* Name with a slight gradient and glow */}
-                <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-white">
-                <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-emerald-400 drop-shadow-[0_0_15px_rgba(96,165,250,0.3)]">Pamindu Rashmitha</span>
+                <h1 className="text-5xl md:text-7xl font-extrabold mb-6 text-slate-900 dark:text-white">
+                    <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-emerald-400">
+                        Pamindu Rashmitha
+                    </span>
                 </h1>
                 
                 <h3 className="text-3xl md:text-5xl font-bold text-slate-400 mb-8">
                     I build digital experiences.
                 </h3>
                 
-                <p className="text-slate-400 text-lg max-w-xl leading-relaxed mb-10">
+                <p className="text-slate-500 dark:text-slate-400 text-lg max-w-xl leading-relaxed mb-10">
                     Driven by the intersection of logic and creativity, I specialize in crafting robust,
                     intelligent systems using modern tech stacks. I thrive on deconstructing complex challenges
                     into streamlined, high-performance software through persistent learning and hands-on experimentation

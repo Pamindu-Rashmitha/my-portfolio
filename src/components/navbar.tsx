@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-6 left-0 w-full z-50 flex justify-center px-4">
-      <div className="bg-blue-600/20 dark:bg-slate-900/80 backdrop-blur-xl border border-white/10 p-1.5 rounded-full flex items-center shadow-2xl transition-all duration-300">
+      <div className="bg-blue-600/50 dark:bg-slate-900/80 backdrop-blur-xl border border-white/10 p-1.5 rounded-full flex items-center shadow-2xl transition-all duration-300">
         
         
         <div className="hidden lg:flex items-center gap-1">

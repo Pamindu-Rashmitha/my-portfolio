@@ -23,6 +23,6 @@ export const contactInfo = [
     icon: MapPin,
     label: "Location",
     value: "Avissawella, Sri Lanka",
-    link: "https://maps.app.goo.gl/MzFWcXuJCjHxbZqw7",
+    link: "https://maps.app.goo.gl/S2vbiE3yUhp56dje9",
   },
 ];

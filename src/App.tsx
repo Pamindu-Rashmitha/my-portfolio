@@ -12,10 +12,12 @@ import { motion } from 'framer-motion';
 import BackToTop from './components/BackToTop';
 import Footer from './components/Footer';
 import Achievements from './components/Achievements';
+import CustomCursor from './components/CustomCursor';
 
 const App = () => {
   return (
     <div className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white min-h-screen transition-colors duration-300">
+      <CustomCursor />
       <Navbar/>
       <SocialBar/>
       

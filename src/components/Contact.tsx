@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { contactInfo } from '../data/contact';
 import { Send } from 'lucide-react';
+import Map from './Map';
 
 const Contact = () => {
   return (
@@ -38,7 +39,10 @@ const Contact = () => {
           </motion.a>
         ))}
       </div>
-      
+        <div className="mb-12">
+          <br />
+          <Map />
+        </div>
       <div className="mt-16 text-center">
         <a
           href="mailto:pamidurashmitha@gmail.com"

@@ -15,14 +15,14 @@ export const contactInfo = [
   },
   {
     icon: Github,
-    label: "GitHub",
+    label: "GitHub(Personal)",
     value: "github.com/Pamindu-Rashmitha",
     link: "https://github.com/Pamindu-Rashmitha",
   },
   {
-    icon: MapPin,
-    label: "Location",
-    value: "Avissawella, Sri Lanka",
-    link: "https://maps.app.goo.gl/S2vbiE3yUhp56dje9",
+    icon: Github,
+    label: "GitHub(Uni)",
+    value: "github.com/IT24102819",
+    link: "https://github.com/IT24102819",
   },
 ];

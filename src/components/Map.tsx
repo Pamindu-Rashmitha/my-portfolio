@@ -42,6 +42,7 @@ const Map = () => {
                         <div className="text-center">
                             <h3 className="font-bold text-slate-900">Pamindu Rashmitha</h3>
                             <p className="text-slate-600">Based in Avissawella, Sri Lanka.</p>
+                            <a href="https://maps.app.goo.gl/S2vbiE3yUhp56dje9" target='_blank'>Location</a>
                         </div>
                     </Popup>
                 </Marker>

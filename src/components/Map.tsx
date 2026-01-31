@@ -1,22 +1,9 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
 import { motion } from 'framer-motion';
-import icon from 'leaflet/dist/images/marker-icon.png';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
-let DefaultIcon = L.icon({
-    iconUrl: icon,
-    shadowUrl: iconShadow,
-    iconSize: [25, 41],
-    iconAnchor: [12, 41]
-});
-
-L.Marker.prototype.options.icon = DefaultIcon;
 
 
 const Map = () => {
-    const position: [number, number] = [6.9543, 80.2046];
+    
 
     return (
         <motion.div
@@ -24,29 +11,16 @@ const Map = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="w-full h-[400px] rounded-2xl overflow-hidden border border-slate-700 shadow-2xl relative z-0"
+            className="w-full h-[450px] rounded-xl overflow-hidden border border-slate-700 shadow-2xl relative z-0"
         >
-            <MapContainer 
-                center={position} 
-                zoom={13} 
-                scrollWheelZoom={false}
-                className="w-full h-full"
-            >
-                <TileLayer
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-
-                <Marker position={position}>
-                    <Popup>
-                        <div className="text-center">
-                            <h3 className="font-bold text-slate-900">Pamindu Rashmitha</h3>
-                            <p className="text-slate-600">Based in Avissawella, Sri Lanka.</p>
-                            <a href="https://maps.app.goo.gl/S2vbiE3yUhp56dje9" target='_blank'>Location</a>
-                        </div>
-                    </Popup>
-                </Marker>
-            </MapContainer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31684.02249142273!2d80.18010389072968!3d6.949860155212474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3a99e4c1f47cd%3A0xee25998579adfb13!2sAvissawella!5e0!3m2!1sen!2slk!4v1769886355780!5m2!1sen!2slk" 
+                    width="1105" height="450" 
+                    style={{ border: "0" }} 
+                    allowFullScreen
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade">
+            </iframe>
+            
         </motion.div>
     );
 };

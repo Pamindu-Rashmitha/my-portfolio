@@ -5,6 +5,6 @@ export const skills = [
   { name: "Backend", icon: Code2, items: ["SpringBoot","FastAPI"]},
   { name: "Mobile", icon: Smartphone, items: ["React Native", "Expo"]},
   { name: "Languages", icon: Terminal, items: ["JavaScript", "Python", "Java","C"]},
-  { name: "Databases", icon: Database, items: ["MySQL","Postgresql"]},
+  { name: "Databases", icon: Database, items: ["MySQL","Postgresql","MongoDB"]},
   { name: "AI/ML", icon: Brain, items:["Pandas","PyTorch","TensorFlow","LangChain","Numpy","Sci-kit Learn","Matplotlib","Seaborn"]}
 ]

@@ -4,6 +4,7 @@ import restImg from '../assets/restaurant.png';
 import pamiya from '../assets/pami-gpt.png';
 import vehicle from '../assets/vehicle.png';
 import portfolio from '../assets/portfolio.png';
+import heritage from '../assets/Heritage-Slabs.jpeg';
 
 
 export interface Project {
@@ -67,6 +68,14 @@ export const projects: Project[] = [
         technologies:["React", "Type Script", "Tailwind CSS", "Framer Motion", "Lucide React"],
         githubLink:"https://github.com/Pamindu-Rashmitha/my-portfolio",
         image:portfolio
+    },
+    {
+        id:7,
+        title:"Heritage Slabs",
+        description:"AI-powered ERP platform designed to modernize operations in the natural stone industry. The system features a unique 'Try in Your Room' AI visualizer that utilizes Gemini 2.5 Flash and Vertex AI Imagen 3 to generate photorealistic interior renderings from user-uploaded photos. It integrates comprehensive management modules for real-time inventory tracking, secure role-based administration, and automated logistics management, powered by a microservices architecture bridging a Spring Boot backend with a specialized Python AI service.",
+        technologies:["React", "Spring-Boot", "Tailwind CSS", "FastAPI", "Gemini & Vertex API"],
+        githubLink:"https://github.com/Pamindu-Rashmitha/Heritage-Slabs",
+        image:heritage
     },
 
 ];

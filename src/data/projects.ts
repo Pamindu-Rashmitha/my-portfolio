@@ -5,7 +5,7 @@ import pamiya from '../assets/pami-gpt.png';
 import vehicle from '../assets/vehicle.png';
 import portfolio from '../assets/portfolio.png';
 import heritage from '../assets/Heritage-Slabs.jpeg';
-import RentGo from '../assets/RentGo.svg';
+import RentGo from '../assets/RentGo.jpg';
 
 
 export interface Project {

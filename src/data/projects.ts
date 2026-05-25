@@ -5,6 +5,7 @@ import pamiya from '../assets/pami-gpt.png';
 import vehicle from '../assets/vehicle.png';
 import portfolio from '../assets/portfolio.png';
 import heritage from '../assets/Heritage-Slabs.jpeg';
+import RentGo from '../assets/RentGo.jpeg';
 
 
 export interface Project {
@@ -76,6 +77,14 @@ export const projects: Project[] = [
         technologies:["React", "Spring-Boot", "Tailwind CSS", "FastAPI", "Gemini & Vertex API"],
         githubLink:"https://github.com/Pamindu-Rashmitha/Heritage-Slabs",
         image:heritage
+    },
+     {
+        id:8,
+        title:"RentGo",
+        description:"RentGo is a comprehensive mobile application designed to streamline vehicle rental operations through a full-stack architecture. The system incorporates robust management modules, including secure user authentication, role-based administrative dashboards for overseeing bookings and fleet maintenance, and a dedicated review system for customer feedback. Built using React Native for the frontend and a Node.js-based backend, the application features an integrated workflow for handling end-to-end rental processes, from vehicle selection and booking management to automated payment processing and operational maintenance tracking.",
+        technologies:["React Native", "Node.js", "Express.js", "MongoDB","Expo Go","Middleware(Cloudinary, Multer)"],
+        githubLink:"https://github.com/Pamindu-Rashmitha/RentGo",
+        image:RentGo
     },
 
 ];

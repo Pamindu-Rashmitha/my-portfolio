@@ -2,7 +2,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   
-  const lastUpdated = "May 2026";
+  const lastUpdated = "June 2026";
 
   return (
         <footer className="max-w-6xl mx-auto px-6 py-12 border-t border-slate-800/50">

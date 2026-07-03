@@ -42,7 +42,7 @@ const Hero = () => {
                     </button>
 
                     <a
-                        href="/Resume.pdf" 
+                        href="/Pamindu_Rashmitha_Resume.pdf" 
                         download="Pamindu_Rashmitha_CV.pdf"
                     >
                     

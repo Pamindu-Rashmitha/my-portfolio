@@ -7,13 +7,13 @@ export interface Certification {
 
 export const certifications: Certification[] = [
     {
-        title:"AI\ML Engineer - Stage 1",
+        title:"AI-ML Engineer - Stage 1",
         issuer:"SLIIT",
         date:"Jul 2025",
         link:"https://code.sliit.org/certificates/c9ub19ssxb"
     },
     {
-        title:"AI\ML Engineer - Stage 2",
+        title:"AI-ML Engineer - Stage 2",
         issuer:"SLIIT",
         date:"Dec 2025",
         link:"https://code.sliit.org/certificates/lhvdxj7uai"

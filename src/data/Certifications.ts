@@ -30,5 +30,12 @@ export const certifications: Certification[] = [
         date:"Dec 2025",
         link:"https://open.uom.lk/verify"
     },
+    {
+        title:"AI Enginner | Outstanding",
+        issuer:"STEM Link",
+        date:"Aug 2026",
+        link:"https://credsverse.com/credentials/5a772e36-b00a-4ce2-bc2f-56356632be4e"
+
+    },
     
 ]

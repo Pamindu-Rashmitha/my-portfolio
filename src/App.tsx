@@ -1,5 +1,6 @@
 import Navbar from './components/navbar';
 import Hero from './components/Hero';
+import About from './components/About';
 import Skills from './components/Skills';
 import Timeline from './components/Education';
 import Experience from './components/Experience';
@@ -17,6 +18,7 @@ const App = () => {
 
       <main className="pt-20 sm:pt-24 md:pt-28 pb-12 sm:pb-16 px-3 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-4 sm:space-y-6 md:space-y-8 w-full">
         <Hero />
+        <About />
         <Skills />
         <Projects />
         <Experience />

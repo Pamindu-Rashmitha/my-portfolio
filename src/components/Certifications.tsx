@@ -1,53 +1,59 @@
 import { motion } from 'framer-motion';
-import { Award, ExternalLink } from "lucide-react";
-import { certifications } from "../data/Certifications";
+import { certifications } from '../data/Certifications';
+import { Award, ExternalLink } from 'lucide-react';
 
 const Certifications = () => {
-    return (
-        <section id="certifications" className="max-w-6xl mx-auto py-24 px-6">
-            <motion.h2 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                className="text-5xl font-extrabold text-center bg-linear-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent mb-16"
-            >
-                Certifications
-            </motion.h2>
+  return (
+    <section id="certifications" className="max-w-7xl mx-auto w-full">
+      <div className="card-base">
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="mb-8 sm:mb-10"
+        >
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary mb-2 sm:mb-3">
+            Certifications
+          </h2>
+          <p className="text-text-secondary text-xs sm:text-sm md:text-base max-w-xl">
+            Professional certifications and completed courses.
+          </p>
+        </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {certifications.map((cert, index) => (
-                    <motion.a
-                        key={index}
-                        href={cert.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
-                        whileHover={{ scale: 1.02 }}
-                        className="group flex items-center justify-between p-6 bg-slate-800/30 border border-slate-700 rounded-xl hover:bg-slate-800/50 transition-all hover:border-blue-500/50 shadow-lg"
-                    >
-                        <div className="flex items-start gap-4">
-                            <div className="p-2 bg-blue-500/50 dark:bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors shrink-0">
-                                <Award className="text-blue-700 dark:text-blue-400 w-6 h-6" />
-                            </div>
-                            <div>
-                                <h3 className="text-lg font-bold text-slate-700 dark:text-white group-hover:text-blue-400 transition-colors">
-                                    {cert.title}
-                                </h3>
-                                <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
-                                    {cert.issuer} • <span className="font-mono text-slate-500">{cert.date}</span>
-                                </p>
-                            </div>
-                        </div>
-                        <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors shrink-0 ml-4" />
-                    </motion.a>
-                ))}
-            </div>
-        </section>
-    );
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+          {certifications.map((cert, index) => (
+            <motion.a
+              key={index}
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: index * 0.05 }}
+              viewport={{ once: true }}
+              className="group bg-bg-alt rounded-xl sm:rounded-2xl p-4 sm:p-5 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 border border-transparent hover:border-border"
+            >
+              <div className="flex items-start justify-between mb-3 sm:mb-4">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-white rounded-lg sm:rounded-xl flex items-center justify-center border border-border group-hover:bg-dark group-hover:text-white transition-colors shrink-0">
+                  <Award className="w-4 h-4 sm:w-5 sm:h-5 text-text-primary group-hover:text-white transition-colors" />
+                </div>
+                <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-text-tertiary group-hover:text-text-primary transition-colors" />
+              </div>
+              <h3 className="font-semibold text-text-primary mb-1 text-xs sm:text-sm leading-snug">
+                {cert.title}
+              </h3>
+              <div className="flex items-center gap-1.5 sm:gap-2 mt-2 sm:mt-3">
+                <span className="text-[11px] sm:text-xs font-medium text-text-secondary">{cert.issuer}</span>
+                <span className="text-text-tertiary text-xs">•</span>
+                <span className="text-[11px] sm:text-xs text-text-tertiary">{cert.date}</span>
+              </div>
+            </motion.a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Certifications;

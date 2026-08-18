@@ -2,53 +2,60 @@ import { motion } from 'framer-motion';
 import { BrainCircuit, Cpu, GraduationCap, Code } from 'lucide-react';
 import { aboutData } from '../data/about';
 
-const About = () => {
-    return (
-        <section id="about" className="max-w-6xl mx-auto py-24 px-6">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    
-                    {/* Left Side: Text Content */}
-                    <motion.div
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true }}
-                    >
-                    
-                    <h3 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">
-                        Building the future with <span className="text-blue-500">Artificial Intelligence</span>
-                    </h3>
-                    <p className="text-slate-500 dark:text-slate-400 text-lg leading-relaxed mb-6">
-                        {aboutData.description}
-                    </p>
-                    <div className="flex items-center gap-3 text-slate-300 bg-slate-800/50 p-4 rounded-xl border border-slate-700 w-fit">
-                        <GraduationCap className="text-blue-800 dark:text-blue-400 w-6 h-6" />
-                        <span className="font-medium text-sm text-slate-900 dark:text-white">SLIIT • Year 2, Semester 2</span>
-                    </div>
-                    </motion.div>
+const icons = [BrainCircuit, Code, Cpu, BrainCircuit];
 
-                    {/* Right Side: AI Specialization Cards */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {aboutData.highlights.map((item, index) => (
-                        <motion.div
-                        key={index}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                        viewport={{ once: true }}
-                        className="p-4 bg-slate-800/30 border border-slate-700/50 rounded-xl hover:bg-slate-800/60 transition-colors"
-                        >
-                        {index === 0 && <BrainCircuit className="text-emerald-400 w-6 h-6 mb-3" />}
-                        {index === 1 && <Code className="text-blue-400 w-6 h-6 mb-3" />}
-                        {index === 2 && <Cpu className="text-purple-400 w-6 h-6 mb-3" />}
-                        {index === 3 && <BrainCircuit className="text-orange-400 w-6 h-6 mb-3" />}
-                        <p className="font-medium text-sm text-slate-900 dark:text-white">{item}</p>
-                        </motion.div>
-                    ))}
-                    </div>
-                </div>
-        </section>
-    );
+const About = () => {
+  return (
+    <section id="about" className="max-w-7xl mx-auto">
+      <div className="card-base">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          {/* Left Side: Text Content */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-6 leading-tight">
+              Building the future with{' '}
+              <span className="text-text-primary">Artificial Intelligence</span>
+            </h2>
+            <p className="text-text-secondary text-base leading-relaxed mb-8">
+              {aboutData.description}
+            </p>
+            <div className="inline-flex items-center gap-3 bg-bg-alt px-5 py-3.5 rounded-2xl border border-border">
+              <GraduationCap className="text-text-primary w-5 h-5" />
+              <span className="font-medium text-sm text-text-primary">
+                SLIIT • Year 3, Semester 1
+              </span>
+            </div>
+          </motion.div>
+
+          {/* Right Side: Specialty Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {aboutData.highlights.map((item, index) => {
+              const Icon = icons[index] || icons[0];
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="p-5 bg-bg-alt rounded-2xl hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 group border border-transparent hover:border-border"
+                >
+                  <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center border border-border group-hover:bg-dark group-hover:text-white transition-colors mb-4 shrink-0">
+                    <Icon className="w-5 h-5 text-text-primary group-hover:text-white transition-colors" />
+                  </div>
+                  <p className="font-medium text-sm text-text-primary leading-relaxed">{item}</p>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default About;

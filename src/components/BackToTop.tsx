@@ -5,7 +5,6 @@ import { ArrowUp } from 'lucide-react';
 const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled down 400px
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 400) {
@@ -30,14 +29,14 @@ const BackToTop = () => {
     <AnimatePresence>
       {isVisible && (
         <motion.button
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.5 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 20 }}
           onClick={scrollToTop}
-          className="fixed bottom-3 left-3 z-50 p-3 bg-blue-600 text-white rounded-full shadow-lg shadow-blue-500/20 hover:bg-blue-700 transition-colors group"
+          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 p-2.5 sm:p-3.5 bg-white text-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white rounded-full shadow-lg border border-gray-200 transition-all duration-300 group cursor-pointer"
           aria-label="Back to top"
         >
-          <ArrowUp className="w-6 h-6 group-hover:-translate-y-1 transition-transform" />
+          <ArrowUp className="w-4 h-4 sm:w-5 sm:h-5 group-hover:-translate-y-0.5 transition-transform" />
         </motion.button>
       )}
     </AnimatePresence>

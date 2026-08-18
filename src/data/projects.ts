@@ -6,7 +6,7 @@ import vehicle from '../assets/vehicle.png';
 import heritage from '../assets/Heritage-Slabs.jpeg';
 import RentGo from '../assets/RentGo.png';
 import kapruka from '../assets/kapruka.png'
-import TripWeaver from '../assets/TripWeaver.jpg'
+import TripWeaver from '../assets/TripWeaver.jpg';
 
 
 export interface Project {
@@ -21,20 +21,21 @@ export interface Project {
 
 export const projects: Project[] = [
     {
-        id:1,
-        title:"TripWeaver",
-        description:"TripWeaver is an intelligent, AI-powered travel planning assistant designed to streamline your trip organization. By leveraging advanced language models and specialized data agents, TripWeaver provides seamless travel planning, including flight searches, hotel recommendations, activity planning, and real-time weather updates.",
-        technologies:["React", "FastAPI", "TypeScript", "Supabase","LangChain","LangGraph","Redis", "Clerk","MCP","Python","Next.js", "Shadcn/ui"],
-        githubLink:"https://github.com/Pamindu-Rashmitha/TripWeaver",
-        image:TripWeaver
+        id: 1,
+        title: "TripWeaver",
+        description: "TripWeaver is an intelligent, AI-powered travel planning assistant designed to streamline your trip organization. By leveraging advanced language models and specialized data agents, TripWeaver provides seamless travel planning, including flight searches, hotel recommendations, activity planning, and real-time weather updates.",
+        technologies: ["React", "FastAPI", "TypeScript", "Supabase", "LangChain", "LangGraph", "Redis", "Clerk", "MCP", "Python", "Next.js", "Shadcn/ui"],
+        githubLink: "https://github.com/Pamindu-Rashmitha/TripWeaver",
+        liveDemo: "https://trip-weaver-five.vercel.app/",
+        image: TripWeaver
     },
     {
-        id:2,
-        title:"Heritage Slabs",
-        description:"AI-powered ERP platform designed to modernize operations in the natural stone industry. The system features a unique 'Try in Your Room' AI visualizer that utilizes Gemini 2.5 Flash and Vertex AI Imagen 3 to generate photorealistic interior renderings from user-uploaded photos. It integrates comprehensive management modules for real-time inventory tracking, secure role-based administration, and automated logistics management, powered by a microservices architecture bridging a Spring Boot backend with a specialized Python AI service.",
-        technologies:["React", "Spring-Boot", "Tailwind CSS", "FastAPI", "Gemini & Vertex API"],
-        githubLink:"https://github.com/Pamindu-Rashmitha/Heritage-Slabs",
-        image:heritage
+        id: 2,
+        title: "Heritage Slabs",
+        description: "AI-powered ERP platform designed to modernize operations in the natural stone industry. The system features a unique 'Try in Your Room' AI visualizer that utilizes Gemini 2.5 Flash and Vertex AI Imagen 3 to generate photorealistic interior renderings from user-uploaded photos. It integrates comprehensive management modules for real-time inventory tracking, secure role-based administration, and automated logistics management, powered by a microservices architecture bridging a Spring Boot backend with a specialized Python AI service.",
+        technologies: ["React", "Spring-Boot", "Tailwind CSS", "FastAPI", "Gemini & Vertex API"],
+        githubLink: "https://github.com/Pamindu-Rashmitha/Heritage-Slabs",
+        image: heritage
     },
     {
         id: 3,
@@ -44,14 +45,14 @@ export const projects: Project[] = [
         githubLink: "https://github.com/Pamindu-Rashmitha/market-store-1",
         image: storeImg
     },
-     {
-        id:4,
-        title:"Kapruka Agent",
-        description:"AI-powered e-commerce agent designed to autonomously guide users through the digital shopping experience. The system features a highly interactive generative UI that utilizes the Vercel AI SDK and a custom Model Context Protocol (MCP) server to render real-time product carousels and dynamic cart previews directly within the chat. It integrates comprehensive conversational commerce modules for live catalog retrieval, seamless end-to-end checkout, and order tracking, powered by a full-stack architecture bridging a React frontend with an Express backend.",
-        technologies:["React", "Express", "Node", "Tailwind CSS", "FastAPI", "openAI API", "Vercel AI-SDK", "MCP"],
-        githubLink:"https://github.com/Pamindu-Rashmitha/Kapruka-Agent",
+    {
+        id: 4,
+        title: "Kapruka Agent",
+        description: "AI-powered e-commerce agent designed to autonomously guide users through the digital shopping experience. The system features a highly interactive generative UI that utilizes the Vercel AI SDK and a custom Model Context Protocol (MCP) server to render real-time product carousels and dynamic cart previews directly within the chat. It integrates comprehensive conversational commerce modules for live catalog retrieval, seamless end-to-end checkout, and order tracking, powered by a full-stack architecture bridging a React frontend with an Express backend.",
+        technologies: ["React", "Express", "Node", "Tailwind CSS", "FastAPI", "openAI API", "Vercel AI-SDK", "MCP"],
+        githubLink: "https://github.com/Pamindu-Rashmitha/Kapruka-Agent",
         liveDemo: "https://kapruka-agent-five.vercel.app/",
-        image:kapruka
+        image: kapruka
     },
     {
         id: 5,
@@ -65,9 +66,9 @@ export const projects: Project[] = [
         id: 6,
         title: "Heart-Disease Predictor",
         description: "A machine learning web application that predicts the likelihood of a patient having heart disease based on medical attributes.",
-        technologies: ["Python", "Scikit-Learn", "Streamlit","Pandas","Matplotlib","Seaborn","Logistic Regression","Decision Tree","Random Forest","XG-boost"],
+        technologies: ["Python", "Scikit-Learn", "Streamlit", "Pandas", "Matplotlib", "Seaborn", "Logistic Regression", "Decision Tree", "Random Forest", "XG-boost"],
         githubLink: "https://github.com/Pamindu-Rashmitha/Heart-Disease-Predictor",
-        liveDemo:"https://heart-disease-predictor-h7gwgu4xvqe5byvijs5eh9.streamlit.app/",
+        liveDemo: "https://heart-disease-predictor-h7gwgu4xvqe5byvijs5eh9.streamlit.app/",
         image: heartImg
     },
     {
@@ -75,25 +76,25 @@ export const projects: Project[] = [
         title: "Pamiya-GPT",
         description: "Pamiya-GPT is a sophisticated AI assistant capable of real-time web search, data analysis, document reading, and email automation. Built using Google's Gemini 2.5 Flash, LangChain, and Streamlit\
                         Unlike standard chatbots that rely solely on training data, Pamiya-GPT is an Agent equipped with specialized tools. It intelligently decides when to browse the internet, analyze a spreadsheet, or read a PDF document to answer your questions.",
-        technologies: ["Python", "Scikit-Learn", "Streamlit","Lang-Chain","Pandas","pypdf","duckduckgo search"],
+        technologies: ["Python", "Scikit-Learn", "Streamlit", "Lang-Chain", "Pandas", "pypdf", "duckduckgo search"],
         githubLink: "https://github.com/Pamindu-Rashmitha/Pamiya-GPT",
-        liveDemo:"https://pamiya-gpt-fzv4byvuzavwvv8na975u8.streamlit.app/",
+        liveDemo: "https://pamiya-gpt-fzv4byvuzavwvv8na975u8.streamlit.app/",
         image: pamiya
     },
     {
-        id:8,
-        title:"Web Based Vehicle Reservation System",
-        description:"This project is a full-stack, enterprise-grade Web-Based Vehicle Rental System developed using Spring Boot. It features a robust architecture integrating Stripe API for secure payments, Spring Security for role-based access control (Admin/User), and MySQL for data management. Key functionalities include real-time vehicle availability searching, automated email notifications, a customer support ticketing system, and a comprehensive administrative dashboard for fleet and revenue analytics.",
-        technologies:["Java", "Spring Boot", "Spring Security", "spring Data JPA/Hibernate", "Thymeleaf","MySQL","Stripe API","Gmail SMTP"],
-        githubLink:"https://github.com/Pamindu-Rashmitha/web-based-vehicle-rental",
-        image:vehicle
+        id: 8,
+        title: "Web Based Vehicle Reservation System",
+        description: "This project is a full-stack, enterprise-grade Web-Based Vehicle Rental System developed using Spring Boot. It features a robust architecture integrating Stripe API for secure payments, Spring Security for role-based access control (Admin/User), and MySQL for data management. Key functionalities include real-time vehicle availability searching, automated email notifications, a customer support ticketing system, and a comprehensive administrative dashboard for fleet and revenue analytics.",
+        technologies: ["Java", "Spring Boot", "Spring Security", "spring Data JPA/Hibernate", "Thymeleaf", "MySQL", "Stripe API", "Gmail SMTP"],
+        githubLink: "https://github.com/Pamindu-Rashmitha/web-based-vehicle-rental",
+        image: vehicle
     },
     {
-        id:10,
-        title:"RentGo",
-        description:"RentGo is a comprehensive mobile application designed to streamline vehicle rental operations through a full-stack architecture. The system incorporates robust management modules, including secure user authentication, role-based administrative dashboards for overseeing bookings and fleet maintenance, and a dedicated review system for customer feedback. Built using React Native for the frontend and a Node.js-based backend, the application features an integrated workflow for handling end-to-end rental processes, from vehicle selection and booking management to automated payment processing and operational maintenance tracking.",
-        technologies:["React Native", "Node.js", "Express.js", "MongoDB","Expo Go","Cloudinary","Multer"],
-        githubLink:"https://github.com/Pamindu-Rashmitha/RentGo",
-        image:RentGo
+        id: 10,
+        title: "RentGo",
+        description: "RentGo is a comprehensive mobile application designed to streamline vehicle rental operations through a full-stack architecture. The system incorporates robust management modules, including secure user authentication, role-based administrative dashboards for overseeing bookings and fleet maintenance, and a dedicated review system for customer feedback. Built using React Native for the frontend and a Node.js-based backend, the application features an integrated workflow for handling end-to-end rental processes, from vehicle selection and booking management to automated payment processing and operational maintenance tracking.",
+        technologies: ["React Native", "Node.js", "Express.js", "MongoDB", "Expo Go", "Cloudinary", "Multer"],
+        githubLink: "https://github.com/Pamindu-Rashmitha/RentGo",
+        image: RentGo
     },
 ];

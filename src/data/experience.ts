@@ -25,7 +25,7 @@ export const experiences: Experience[] = [
         description: [
 
         ],
-        skills: ["Gen AI", "Agentic AI", "Jira"]
+        skills: ["Gen AI", "Agentic AI", "AI Research", "Jira", "ERP"]
     },
 
 ];

@@ -18,5 +18,14 @@ export const experiences: Experience[] = [
         ],
         skills: ["SAP", "Logistics Operations", "Inventory Management"]
     },
+    {
+        company: "David Pieris Holdings (Pvt) Ltd",
+        role: "AI & Research Engineer Intern",
+        duration: "September/2026 - Present",
+        description: [
+
+        ],
+        skills: ["Gen AI", "Agentic AI", "Jira"]
+    },
 
 ];

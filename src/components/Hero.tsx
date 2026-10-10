@@ -26,7 +26,7 @@ const Hero = () => {
             </h1>
 
             <h2 className="text-base sm:text-xl md:text-2xl font-bold text-text-secondary mb-4 sm:mb-6 leading-snug">
-              AI & Research Engineer Intern @ David Pieris Group |AI & Software Engineering Undergraduate
+              AI & Research Engineer Intern @ David Pieris Group | AI & Software Engineering Undergraduate
             </h2>
 
             <p className="text-xs sm:text-sm md:text-base text-text-secondary leading-relaxed mb-6 sm:mb-8 max-w-md lg:max-w-lg">
